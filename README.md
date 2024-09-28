@@ -13,5 +13,6 @@ Utilized a Python script to aplly ETL into PostgreSQL tables, and analysis queri
 + `pyhive` to connect to hive data warehouse.
 + `psycopg2` to connect to PostgreSQL, and use its queries in Python script.
 ## Superset Dashboard
++ Connected Superset to the database from PostgreSQL 
 ![{943D587A-49B6-4F37-97D4-60800F04E67D}](https://github.com/user-attachments/assets/e51dd34f-1fac-48c7-8376-c8a93d41ad37)
 
