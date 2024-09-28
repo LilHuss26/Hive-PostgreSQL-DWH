@@ -1,7 +1,7 @@
 # Hive-PostgreSQL-DWH
 Warehousing data to Hive applying ETL to use PostgreSQL, and create a Superset dashboard.
 ## Data 
-The used data is [Fifa 21 Dataset]([https://pages.github.com/](https://www.kaggle.com/datasets/kumudini77/cleaned-fifa-21-player-dataset)
+The used data is [Fifa 21 Dataset](https://www.kaggle.com/datasets/kumudini77/cleaned-fifa-21-player-dataset)
 Data have 12 tables, only used 10.
 ## Hadoop HDFS
 At first, every .csv file was saved to a directory in the HDFS system, in /user/hive/warehouse.
