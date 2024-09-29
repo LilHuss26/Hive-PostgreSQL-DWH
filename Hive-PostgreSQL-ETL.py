@@ -6,7 +6,10 @@ cursor_hive = conn_hive.cursor()
 
 import psycopg2
 
-# Connect to the existing database (usually 'postgres')
+
+CREATE DATABASE IF NOT EXISTS fifa21;
+
+# Connect to the existing database 
 conn = psycopg2.connect("host=172.23.0.2 dbname=fifa21 user=postgres password=postgres")
 conn.set_session(autocommit=True)
 cursor_pg = conn.cursor()
@@ -27,7 +30,7 @@ hive_tables = [
     "physical_market"
 ]
 
-# Table schema dictionary (replace with actual data types)
+# Table schema dictionary 
 table_schemas = {
     "attributes": """attributes (
         name VARCHAR(255) ,
@@ -130,7 +133,6 @@ for table_name in hive_tables:
     # Insert data into PostgreSQL table
     cursor_pg.executemany(f"INSERT INTO {table_name} VALUES (%s, %s, %s, %s, %s, %s)", rows)
 
-# (Rest of the code for loading data from Hive to PostgreSQL remains the same)
 
 conn.commit()
 cursor_pg.close()
