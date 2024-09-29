@@ -8,7 +8,7 @@ At first, every .csv file was saved to a directory in the HDFS system, in /user/
 ## Hive Warehouse
 Designed a dimensional model for the data warehouse, a hive code to save every .csv file to a table in the created **fifa21** database.
 ## PostgreSQL ETL
-Utilized a Python script to aplly ETL into PostgreSQL tables, and analysis queries. 
+Utilized a Python script to aplly ETL into created PostgreSQL tables schema, and analysis queries. 
 ### used libraries
 + `pyhive` to connect to hive data warehouse.
 + `psycopg2` to connect to PostgreSQL, and use its queries in Python script.
