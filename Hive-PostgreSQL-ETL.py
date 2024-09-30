@@ -7,7 +7,7 @@ cursor_hive = conn_hive.cursor()
 import psycopg2
 
 
-CREATE DATABASE IF NOT EXISTS fifa21;
+cursor_pg.execute("CREATE DATABASE fifa21")
 
 # Connect to the existing database 
 conn = psycopg2.connect("host=172.23.0.2 dbname=fifa21 user=postgres password=postgres")
